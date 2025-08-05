@@ -1,4 +1,3 @@
-# WINERY-DATA-SCRAPER
 # Wine World Scraper 🍷
 
 A comprehensive web scraper built with Selenium and Python to extract wine product information from Wine World Sri Lanka. This scraper efficiently collects product links and detailed product data including prices, descriptions, origins, and specifications.
