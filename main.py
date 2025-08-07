@@ -3,7 +3,7 @@
 import argparse
 import sys
 from config import * # This imports MAX_PAGES and other config variables
-from utility import * # Corrected from 'utils' to 'utility' based on your provided file
+from utility import * 
 from link_scraper import LinkScraper
 from data_scraper import DataScraper
 from imports import *
@@ -101,17 +101,17 @@ def run_quick_test():
             logger.info(f"Found {len(links)} product links")
 
             if links:
-                logger.info("✅ Site is accessible with requests method")
+                logger.info("Site is accessible with requests method")
                 logger.info("Sample links:")
                 for i, link in enumerate(links[:3]):
                     logger.info(f"   {i+1}. {link}")
             else:
-                logger.warning("❌ No product links found - might need Selenium")
+                logger.warning(" No product links found - might need Selenium")
         else:
-            logger.error(f"❌ Site returned HTTP {response.status_code}")
+            logger.error(f" Site returned HTTP {response.status_code}")
 
     except Exception as e:
-        logger.error(f"❌ Test failed: {e}")
+        logger.error(f" Test failed: {e}")
 
 def run_requests_scraper(max_pages_limit: int):
     """Run the requests-based scraper"""
@@ -155,9 +155,9 @@ def process_and_save_results(all_links):
     
     # Save to text file only (no JSON)
     if save_links_to_file(unique_links, LINKS_FILE):
-        logger.info(f"✅ Links saved to {LINKS_FILE}")
+        logger.info(f"Links saved to {LINKS_FILE}")
     else:
-        logger.error(f"❌ Failed to save links to {LINKS_FILE}")
+        logger.error(f"Failed to save links to {LINKS_FILE}")
     
     return unique_links
 
@@ -178,4 +178,5 @@ def save_links_to_json(links, filename):
         return False
 
 if __name__ == "__main__":
+
     main()
