@@ -38,7 +38,7 @@ ENV/
 *~
 
 # Project specific files
-*.csv
+
 *.json
 *.txt
 !requirements.txt
