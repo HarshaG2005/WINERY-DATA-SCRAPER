@@ -13,19 +13,6 @@ A comprehensive web scraper built with Selenium and Python to extract wine produ
 - **Error Recovery**: Retry mechanisms and graceful error handling
 - **Configurable Limits**: Customizable page limits and scraping parameters
 
-## 🏗️ Architecture
-
-```
-wine-scraper/
-├── main.py              # Main entry point and orchestration
-├── base_scraper.py      # Base scraper class with common functionality
-├── link_scraper.py      # Specialized for collecting product links
-├── data_scraper.py      # Specialized for extracting product data
-├── config.py            # Configuration settings and constants
-├── utility.py           # Utility functions and data classes
-├── imports.py           # Centralized imports
-└── requirements.txt     # Python dependencies
-```
 
 ## 🚀 Quick Start
 
@@ -39,7 +26,7 @@ wine-scraper/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/wine-world-scraper.git
+   git clone https://github.com/HarshaG2005/wine-world-scraper.git
    cd wine-world-scraper
    ```
 
@@ -234,7 +221,7 @@ This scraper is for educational and research purposes only. Users are responsibl
 
 If you encounter issues or have questions:
 
-1. Check the [Issues](https://github.com/yourusername/wine-world-scraper/issues) page
+1. Check the [Issues](https://github.com/HarshaG2005/wine-world-scraper/issues) page
 2. Create a new issue with detailed description
 3. Include logs and error messages
 
